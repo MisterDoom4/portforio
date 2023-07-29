@@ -5,17 +5,42 @@ function Profile_Nav() {
   return (
     <div className="profile_nav">
         <div className="profile_nav_container">
-            <h1>Profile</h1>
+            <h1>Vinícius Barbosa Mourão</h1>
             <div className="profile_img">
                 <img
-                    src="https://static.wixstatic.com/media/94b54e_b7dad22513964731bf8a2a2fabc09890~mv2.png/v1/fill/w_212,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/AEW-Official-Logo-2021.png"
+                    src="https://avatars.githubusercontent.com/u/34627836?s=400&u=18cd785e3f29a626518499bc4442cda74943a370&v=4"
                     alt="logo"
                     className="logo"
                 />
             </div>
             <div className="profile_description">
-            Hi, my name is Vinicius Barbosa and Im a senior software engineer. Welcome to my personal website!
+            Olá meu nome é Vinicius Barbosa Mourão. Sou um desenvolvedor junior.
+            Bem vindo ao meu site!
             </div>
+            <ul className="profile_links">
+                <li>
+                <a href="
+                    https://www.linkedin.com/in/vinícius-barbosa-mourão-997a4121a/
+                ">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                    alt="logo"
+                    className="logo"
+                />
+                </a>
+                </li>
+                <li>
+                <a href="
+                    https://github.com/MisterDoom4
+                ">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="logo"
+                    className="logo"
+                />
+                </a>
+                </li>
+            </ul>
             <div className="profile_nav__container">
                 <div className="profile_nav__container__item">
                 <Link to="/profile">Profile</Link>
