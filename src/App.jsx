@@ -1,11 +1,16 @@
-import Profilenav from './components/Profilenav'
+import ProfileNav from './components/ProfileNav'
+// import Sidenav from './components/SideNav'
+import Profile from './components/Profile'
+// import Main from './components/Main'
+
 
 function App() {
   
   return (
     <div>
-       <Profilenav />
-    </div>
+       <ProfileNav />
+       <Profile/>
+      </div>
   )
 }
 
