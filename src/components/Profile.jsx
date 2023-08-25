@@ -11,7 +11,7 @@ function Profile({ isMobile, darkMode }) {
     <div className={`${darkMode ? ' bg-gray-700' : 'bg-white'}`}>
       <div className={` ${darkMode ? 'bg-gray-600' : 'bg-gray-200'} ${isMobile ? 'flex-col' : 'flex'}`}>
         <div className={`pt-8 ${isMobile ? 'pl-0' : ' pl-96'}`}>
-          <h1 className={`text-4xl select-none ${darkMode ? ' text-white' : 'text-black'} ${isMobile ? ' text-center':''} `}>Vinicius Barbosa Mourão</h1>
+          <h1 className={`text-4xl select-none ${darkMode ? ' text-white' : 'text-black'} ${isMobile ? ' text-center' : ''} `}>Vinicius Barbosa Mourão</h1>
           <h2 className={` text-2xl font-light  ${darkMode ? 'text-white' : 'text-black'} ${isMobile ? 'text-center' : 'pl-[4px]'}`}>Desenvolvedor Junior</h2>
         </div>
         <div className={`${isMobile ? ' flex justify-center pb-8 pt-7' : ' pt-8 pl-10 pb-8'}`}>
