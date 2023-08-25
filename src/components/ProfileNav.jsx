@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { AiOutlineHome, AiOutlineRead, AiOutlineMail, AiOutlineMenu, AiFillProject } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import PropTypes from 'prop-types';
@@ -10,7 +10,7 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
         isMobile: PropTypes.bool.isRequired,
         onDarkModeChange: PropTypes.func.isRequired,
     };
-    
+
     const darkColor = 'bg-gray-800'
 
     const [nav, setNav] = useState(false)
@@ -27,10 +27,10 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
     if (isMobile) {
         return (
             <div>
-                <AiOutlineMenu onClick={handleNav} className={`absolute top-4 left-3 z-[99] md:hidden ${darkMode ? ' text-white' :''}`} />
+                <AiOutlineMenu onClick={handleNav} className={`absolute top-4 left-3 z-[99] md:hidden ${darkMode ? ' text-white' : ''}`} />
                 <div className={`w-full  flex flex-col justify-center items-center  
                 ${nav ? ' pt-[5px]' : 'h-[45px]'} ${darkMode ? `${darkColor}` : 'bg-blue-500'}`}>
-                    <h1 className={`text-center text-3xl text-white select-none ${nav ? 'pb-4 pl-[17px]' : 'fixed '}`}>
+                    <h1 className={` text-3xl text-white select-none ${nav ? 'pb-4 pl-[17px]' : ' absolute'}`}>
                         Vinícius Barbosa Mourão
                     </h1>
                     <div className=" flex justify-center">
@@ -87,13 +87,13 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                         </li>
                     </ul>
                     <label className={`flex items-center justify-center mt-[30px] mb-[15px] ${nav ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-                    <div className="relative">
-                        <input type="checkbox" className="sr-only" onClick={darkModeChange} />
-                        <div className="block bg-gray-600 w-[40px] h-[20px] rounded-full"></div>
-                        <div className={`dot absolute  top-[1px] bg-white w-[18px] h-[18px] rounded-full transition ${darkMode ? 'right-1' : 'left-1'} `}></div>
-                    </div>
-                    <div className="ml-[10px] text-white font-bold">Dark Mode</div>
-                </label>
+                        <div className="relative">
+                            <input type="checkbox" className="sr-only" onClick={darkModeChange} />
+                            <div className="block bg-gray-600 w-[40px] h-[20px] rounded-full"></div>
+                            <div className={`dot absolute  top-[1px] bg-white w-[18px] h-[18px] rounded-full transition ${darkMode ? 'right-1' : 'left-1'} `}></div>
+                        </div>
+                        <div className="ml-[10px] text-white font-bold">Dark Mode</div>
+                    </label>
                 </div>
 
             </div>
@@ -134,7 +134,7 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                 </ul>
                 <ul className='mt-4 list-none flex-col text-center'>
                     <li className='mb-2'>
-                        <Link to ='/' className='hover:text-blue-800 text-white'>
+                        <Link to='/' className='hover:text-blue-800 text-white'>
                             <AiOutlineHome className='mr-[15px]  inline-block' size={25} />
                             <h2 className='mr-3 inline-block font-bold'>Home</h2>
                         </Link>
