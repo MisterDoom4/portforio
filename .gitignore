@@ -24,3 +24,4 @@ src/components/Main.jsx
 *.njsproj
 *.sln
 *.sw?
+.prettierrc 
