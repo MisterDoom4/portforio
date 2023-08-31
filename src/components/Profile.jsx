@@ -1,55 +1,49 @@
 import PropTypes from 'prop-types';
 import MainSkills from './MainSkills';
 
-function Profile({ isMobile, darkMode }) {
+function Profile({ isMobile, darkMode, tecs }) {
     Profile.propTypes = {
         isMobile: PropTypes.bool.isRequired,
-        darkMode: PropTypes.bool.isRequired
+        darkMode: PropTypes.bool.isRequired,
+        tecs: PropTypes.array.isRequired
     };
 
     return (
-        <div className={`${darkMode ? ' bg-gray-700' : 'bg-white'}`}>
-            <div
-                className={` ${darkMode ? 'bg-gray-600' : 'bg-gray-200'} ${
-                    isMobile ? 'flex-col' : 'flex'
-                }`}>
-                <div className={`pt-8 ${isMobile ? 'pl-0' : ' pl-96'}`}>
+        <section className={`${darkMode ? ' bg-gray-700' : 'bg-white'}`}>
+            <section
+                className={` flex-col flex items-center md:items-start md:flex-row ${
+                    darkMode ? 'bg-gray-600' : 'bg-gray-200'
+                } `}>
+                <section className={`pt-8 md:pl-96`}>
                     <h1
-                        className={`text-4xl select-none ${
+                        className={`text-4xl select-none text-center md:text-start ${
                             darkMode ? ' text-white' : 'text-black'
-                        } ${isMobile ? ' text-center' : ''} `}>
+                        }`}>
                         Vinicius Barbosa Mourão
                     </h1>
                     <h2
-                        className={` text-2xl font-light  ${
+                        className={` text-2xl font-light text-center md:pl-[4px] md:text-start ${
                             darkMode ? 'text-white' : 'text-black'
-                        } ${isMobile ? 'text-center' : 'pl-[4px]'}`}>
+                        }`}>
                         Desenvolvedor Junior
                     </h2>
-                </div>
-                <div
-                    className={`${
-                        isMobile
-                            ? ' flex justify-center pb-8 pt-7'
-                            : ' pt-8 pl-10 pb-8'
-                    }`}>
-                    <img
-                        src="https://avatars.githubusercontent.com/u/34627836?s=400&u=18cd785e3f29a626518499bc4442cda74943a370&v=4"
-                        alt="logo"
-                        className={`max-w-xs max-h-64  transition-all select-none duration-0 `}
-                    />
-                </div>
-            </div>
-            <div className={` ${isMobile ? '' : 'pt-4 pl-96'}`}>
-                <div
-                    className={` pt-3 text-4xl ${
+                </section>
+                <img
+                    src="https://avatars.githubusercontent.com/u/34627836?s=400&u=18cd785e3f29a626518499bc4442cda74943a370&v=4"
+                    alt="logo"
+                    className={`max-w-xs max-h-64  transition-all select-none duration-0 my-5  md:ml-7`}
+                />
+            </section>
+            <section className={`md:pt-4 md:pl-96`}>
+                <h1
+                    className={` pt-3 text-4xl text-center md:text-start ${
                         darkMode ? 'text-white' : 'text-black'
-                    } ${isMobile ? 'text-center' : ''}`}>
+                    }  `}>
                     Tecnologias que eu trabalho
-                </div>
-                <MainSkills isMobile={isMobile} darkMode={darkMode} />
-            </div>
-        </div>
+                </h1>
+                <MainSkills darkMode={darkMode} tecs={tecs} />
+            </section>
+        </section>
     );
 }
 

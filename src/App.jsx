@@ -6,6 +6,8 @@ import Profile from './components/Profile';
 // import Main from './components/Main'
 import { useMediaQuery } from 'react-responsive';
 import Projects from './components/Projects';
+import Teste from './components/Teste';
+import config from './assets/config.json';
 
 function App() {
     const matches = useMediaQuery({ query: '(max-width: 768px)' });
@@ -16,20 +18,24 @@ function App() {
     };
 
     return (
-        <div>
+        <main>
             <ProfileNav isMobile={matches} onDarkModeChange={handleDarkMode} />
             <Routes>
                 <Route
                     path="/"
-                    element={<Profile isMobile={matches} darkMode={darkMode} />}
+                    element={<Profile isMobile={matches} darkMode={darkMode} tecs ={config.tecs} />}
                 />
                 <Route
                     path="/projects"
-                    element={<Projects isMobile={matches} darkMode={darkMode} />}
+                    element={<Projects darkMode={darkMode} projects ={config.projects} />}
+                />
+                <Route
+                    path="/teste"
+                    element={<Teste projetos = {config.projects} />}
                 />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-        </div>
+        </main>
     );
 }
 

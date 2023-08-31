@@ -1,0 +1,100 @@
+{
+    "tecs": [{
+        "id": 1,
+        "name": "JavaScript",
+        "description": "JavaScript is a programming language",
+        "icons" : [{"id": 1,"name" : "FaJs", "color" : "text-yellow-400"}]
+    }, {
+        "id": 2,
+        "name": "React",
+        "description": "React is a framework language",
+        "icons" : [{"id": 1,"name":"FaReact", "color" : "text-blue-400"}]
+    }, {
+        "id": 3,
+        "name": "Node",
+        "description": "Node is ",
+        "icons" : [{"id": 1,"name":"FaNodeJs", "color" : "text-green-400"}]
+    }, {
+        "id": 4,
+        "name": "Express",
+        "description": "Express is a framework",
+        "icons" : [{"id": 1,"name":"FaNodeJs", "color" : "text-green-400"}]
+    }, {
+        "id": 5,
+        "name": "MongoDB",
+        "description": "MongoDb is a database",
+        "icons" : [{"id": 1,"name":"FaDatabase", "color" : "text-green-700"}]
+    }, {
+        "id": 6,
+        "name": "HTML,CSS",
+        "description": "HTML,CSS is ",
+        "icons" : [{"id": 1,"name":"FaHtml5", "color" : "text-orange-400"}, {"id": 2,"name":"FaCss3Alt", "color" : "text-blue-400"}]
+    }, {
+        "id": 7,
+        "name": "Bootstrap",
+        "description": "Bootstrap is ",
+        "icons" : [{"id": 1,"name":"FaBootstrap", "color" : "text-purple-700"}]
+    }, {
+        "id": 8,
+        "name": "Tailwind CSS",
+        "description": "Tailwind CSS is ",
+        "icons" : [{"id": 1,"name":"FaCss3Alt", "color" : "text-blue-400"}]
+    }, {
+        "id": 9,
+        "name": "Git",
+        "description": "Git is a version control system",
+        "icons" : [{"id": 1,"name":"FaGitAlt", "color" : "text-red-700"}]
+    }, {
+        "id": 10,
+        "name": "Java",
+        "description": "Java is a programming language",
+        "icons" : [{"id": 1,"name":"FaJava", "color" : "text-red-700"}]
+    }, {
+        "id": 11,
+        "name": "Spring Boot",
+        "description": "Spring Boot is a framework",
+        "icons" : [{"id": 1,"name":"FaJava", "color" : "text-red-700"}]
+    }, {
+        "id": 12,
+        "name": "MySQL",
+        "description": "MySQL is a database",
+        "icons" : [{"id": 1,"name":"FaDatabase", "color" : "text-green-700"}]
+    }, {
+        "id": 13,
+        "name": "Flutter",
+        "description": "Flutter is a framework",
+        "icons" : [{"id": 1,"name":"FaMobileAlt", "color" : "text-blue-400"}]
+    }, {
+        "id": 14,
+        "name": "Python",
+        "description": "Python is a programming language",
+        "icons" : [{"id": 1,"name":"FaPython", "color" : "text-yellow-400"}]
+    }],
+    "projects" : [
+        {
+            "id": 1,
+            "name": "Project 1",
+            "description": "This is project 1"
+        },
+        {
+            "id": 2,
+            "name": "Project 2",
+            "description": "This is project 2"
+        },
+        {
+            "id": 3,
+            "name": "Project 3",
+            "description": "This is project 3"
+        },
+        {
+            "id": 4,
+            "name": "Project 4",
+            "description": "This is project 4"
+        },
+        {
+            "id": 5,
+            "name": "Project 5",
+            "description": "This is project 5"
+        }
+    ]
+}

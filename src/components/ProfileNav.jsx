@@ -31,14 +31,14 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
 
     if (isMobile) {
         return (
-            <div>
+            <header>
                 <AiOutlineMenu
                     onClick={handleNav}
                     className={`absolute top-4 left-3 z-[99] md:hidden ${
                         darkMode ? ' text-white' : ''
                     }`}
                 />
-                <div
+                <nav
                     className={`w-full  flex flex-col justify-center items-center  
                 ${nav ? ' pt-[5px]' : 'h-[45px]'} ${
                         darkMode ? `${darkColor}` : 'bg-blue-500'
@@ -49,7 +49,6 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                         }`}>
                         Vinícius Barbosa Mourão
                     </h1>
-                    <div className=" flex justify-center">
                         <img
                             src="https://avatars.githubusercontent.com/u/34627836?s=400&u=18cd785e3f29a626518499bc4442cda74943a370&v=4"
                             alt="logo"
@@ -57,14 +56,13 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                                 nav ? 'opacity-100' : 'opacity-0'
                             }`}
                         />
-                    </div>
-                    <div
+                    <p
                         className={`m-1 text-base text-white font-bold font-mono text-center transition-all duration-0 ${
                             nav ? 'opacity-100' : 'opacity-0'
                         }`}>
                         Olá meu nome é Vinicius Barbosa Mourão. Sou um
                         desenvolvedor junior. Bem vindo ao meu site!
-                    </div>
+                    </p>
                     <ul
                         className={`mt-[15px] list-none flex justify-center transition-all duration-0 ${
                             nav
@@ -159,7 +157,7 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                                 ? 'opacity-100'
                                 : 'opacity-0 pointer-events-none'
                         }`}>
-                        <div className="relative">
+                        <section className="relative">
                             <input
                                 type="checkbox"
                                 className="sr-only"
@@ -170,19 +168,19 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                                 className={`dot absolute  top-[1px] bg-white w-[18px] h-[18px] rounded-full transition ${
                                     darkMode ? 'right-1' : 'left-1'
                                 } `}></div>
-                        </div>
-                        <div className="ml-[10px] text-white font-bold">
+                        </section>
+                        <h2 className="ml-[10px] text-white font-bold">
                             Dark Mode
-                        </div>
+                        </h2>
                     </label>
-                </div>
-            </div>
+                </nav>
+            </header>
         );
     } else {
         if (nav) setNav(false);
         return (
-            <div
-                className={`flex-col fixed left-0 top-0 m-0  max-w-[280px] h-full overflow-y-auto 
+            <header
+                className={`fixed flex flex-col items-center left-0 top-0 m-0  max-w-[280px] h-full overflow-y-auto 
             scrollbar-thin  ${
                 darkMode
                     ? `${darkColor} scrollbar-thumb-gray-700 hover:scrollbar-thumb-gray-950`
@@ -191,17 +189,15 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                 <h1 className="mt-[12px] text-center text-3xl text-white">
                     Vinícius Barbosa Mourão
                 </h1>
-                <div className="mb-4 text-center flex justify-center">
                     <img
                         src="https://avatars.githubusercontent.com/u/34627836?s=400&u=18cd785e3f29a626518499bc4442cda74943a370&v=4"
                         alt="logo"
-                        className="max-w-[200px] rounded-full"
+                        className="max-w-[200px] rounded-full my-3"
                     />
-                </div>
-                <div className="m-1 text-sm text-white font-light font-mono flex justify-center text-center">
+                <p className="m-1 text-sm text-white font-light font-mono flex justify-center text-center">
                     Olá meu nome é Vinicius Barbosa Mourão. Sou um desenvolvedor
                     junior. Bem vindo ao meu site!
-                </div>
+                </p>
                 <ul className="mt-[15px] list-none flex justify-center">
                     <li className="inline-block w-[60px] h-[60px] pt-[5px] pl-[5px] rounded-[50%] bg-white hover:bg-blue-800">
                         <a
@@ -270,7 +266,7 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                     </li>
                 </ul>
                 <label className="flex items-center justify-center mt-[30px] mb-[15px]">
-                    <div className="relative">
+                    <section className="relative">
                         <input
                             type="checkbox"
                             className="sr-only"
@@ -281,12 +277,12 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                             className={`dot absolute  top-[1px] bg-white w-[18px] h-[18px] rounded-full transition ${
                                 darkMode ? 'right-1' : 'left-1'
                             } `}></div>
-                    </div>
-                    <div className="ml-[10px] text-white font-bold">
+                    </section>
+                    <h2 className="ml-[10px] text-white font-bold">
                         Dark Mode
-                    </div>
+                    </h2>
                 </label>
-            </div>
+            </header>
         );
     }
 }
