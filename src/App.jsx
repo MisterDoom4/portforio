@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ProfileNav from './components/ProfileNav';
 // import Sidenav from './components/SideNav'
-import Profile from './components/Profile';
+import Profile from './pages/profile/Profile';
 // import Main from './components/Main'
 import { useMediaQuery } from 'react-responsive';
-import Projects from './components/Projects';
+import Projects from './pages/projects/Projects';
 import Teste from './components/Teste';
 import config from './assets/config.json';
 
@@ -23,7 +23,7 @@ function App() {
             <Routes>
                 <Route
                     path="/"
-                    element={<Profile isMobile={matches} darkMode={darkMode} tecs ={config.tecs} />}
+                    element={<Profile darkMode={darkMode} tecs ={config.tecs} />}
                 />
                 <Route
                     path="/projects"

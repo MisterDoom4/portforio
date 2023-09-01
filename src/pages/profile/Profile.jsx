@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import MainSkills from './MainSkills';
+import MainSkills from './components/MainSkills';
 
-function Profile({ isMobile, darkMode, tecs }) {
+function Profile({ darkMode, tecs }) {
     Profile.propTypes = {
-        isMobile: PropTypes.bool.isRequired,
         darkMode: PropTypes.bool.isRequired,
         tecs: PropTypes.array.isRequired
     };
