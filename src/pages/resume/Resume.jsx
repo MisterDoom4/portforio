@@ -94,7 +94,7 @@ function Resume(props) {
                             algoritmos de exclusão mutua, utilizando a técnica de
                             explorable explanations. Foi utilizado HTML, CSS e JavaScript
                             para o desenvolvimento da página. O site permite que o usuário
-                            intereja com o algoritmo, podendo alterar os valores de
+                            interaja com o algoritmo, podendo alterar os valores de
                             entrada e observar o comportamento do algoritmo. Link do
                             projeto: {''}
                             <a href="https://misterdoom4.github.io/TCC/"
