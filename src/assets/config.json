@@ -2,99 +2,99 @@
     "tecs": [{
         "id": 1,
         "name": "JavaScript",
-        "description": "JavaScript is a programming language",
+        "description": "Experiência avançada, utilizado em projetos web, como meu TCC e projetos pessoais.",
         "icons" : [{"id": 1,"name" : "FaJs", "color" : "text-yellow-400"}]
     }, {
         "id": 2,
         "name": "React",
-        "description": "React is a framework language",
+        "description": "Experiência avançada, utilizado nesse próprio site e em outros projetos pessoais."	,
         "icons" : [{"id": 1,"name":"FaReact", "color" : "text-blue-400"}]
     }, {
         "id": 3,
         "name": "Node",
-        "description": "Node is ",
+        "description": "Experiência avançada, utilizado em projetos web.",
         "icons" : [{"id": 1,"name":"FaNodeJs", "color" : "text-green-400"}]
     }, {
         "id": 4,
         "name": "Express",
-        "description": "Express is a framework",
+        "description": "Experiência avançada, utilizado em projetos full stack, principalmente na criação de servidor web.",
         "icons" : [{"id": 1,"name":"FaNodeJs", "color" : "text-green-400"}]
     }, {
         "id": 5,
         "name": "MongoDB",
-        "description": "MongoDb is a database",
+        "description": "Experiência avançada, utilizado em projetos full stack, criação de banco de dados não relacionais.",
         "icons" : [{"id": 1,"name":"FaDatabase", "color" : "text-green-700"}]
     }, {
         "id": 6,
         "name": "HTML,CSS",
-        "description": "HTML,CSS is ",
+        "description": "Experiência avançada, utilizado em meu TCC e em projetos pessoais",
         "icons" : [{"id": 1,"name":"FaHtml5", "color" : "text-orange-400"}, {"id": 2,"name":"FaCss3Alt", "color" : "text-blue-400"}]
     }, {
         "id": 7,
         "name": "Bootstrap",
-        "description": "Bootstrap is ",
+        "description": "Experiência básica, utilizado em projetos pessoais ",
         "icons" : [{"id": 1,"name":"FaBootstrap", "color" : "text-purple-700"}]
     }, {
         "id": 8,
         "name": "Tailwind CSS",
-        "description": "Tailwind CSS is ",
+        "description": "Experiência avançada, utilizado nesse próprio site em conjunto com React",
         "icons" : [{"id": 1,"name":"FaCss3Alt", "color" : "text-blue-400"}]
     }, {
         "id": 9,
         "name": "Git",
-        "description": "Git is a version control system",
+        "description": "Experiência avançada, utilizado em todos meus projetos.",
         "icons" : [{"id": 1,"name":"FaGitAlt", "color" : "text-red-700"}]
     }, {
         "id": 10,
         "name": "Java",
-        "description": "Java is a programming language",
+        "description": "Experiência avançada, com projetos Back-End.",
         "icons" : [{"id": 1,"name":"FaJava", "color" : "text-red-700"}]
     }, {
         "id": 11,
         "name": "Spring Boot",
-        "description": "Spring Boot is a framework",
+        "description": "Experiência básica, com projetos Back-End.",
         "icons" : [{"id": 1,"name":"FaJava", "color" : "text-red-700"}]
     }, {
         "id": 12,
         "name": "MySQL",
-        "description": "MySQL is a database",
+        "description": "Experiência avançada, com projetos Back-End.",
         "icons" : [{"id": 1,"name":"FaDatabase", "color" : "text-green-700"}]
     }, {
         "id": 13,
         "name": "Flutter",
-        "description": "Flutter is a framework",
+        "description": "Experiência avançada, com projetos de aplicativos mobile.",
         "icons" : [{"id": 1,"name":"FaMobileAlt", "color" : "text-blue-400"}]
     }, {
         "id": 14,
         "name": "Python",
-        "description": "Python is a programming language",
+        "description": "Experiência avançada, com projetos Back-End",
         "icons" : [{"id": 1,"name":"FaPython", "color" : "text-yellow-400"}]
     }],
     "projects" : [
         {
             "id": 1,
-            "name": "Project 1",
-            "description": "This is project 1"
+            "name": "TCC",
+            "description": "Criação de site interativo."
         },
         {
             "id": 2,
-            "name": "Project 2",
-            "description": "This is project 2"
+            "name": "System Rank",
+            "description": "Projeto REST API, com Front e Back"
         },
         {
             "id": 3,
-            "name": "Project 3",
-            "description": "This is project 3"
+            "name": "Bloco de notas",
+            "description": "Aplicativo mobile, usando Flutter"
         },
         {
             "id": 4,
-            "name": "Project 4",
-            "description": "This is project 4"
+            "name": "Portifólio",
+            "description": "Site pessoal usando React"
         },
         {
             "id": 5,
-            "name": "Project 5",
-            "description": "This is project 5"
+            "name": "Jogo da Velha",
+            "description": "IA de jogo da velha usando Python"
         }
     ]
 }
