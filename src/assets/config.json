@@ -74,27 +74,32 @@
         {
             "id": 1,
             "name": "TCC",
-            "description": "Criação de site interativo."
+            "description": "Criação de site interativo.",
+            "link": "https://misterdoom4.github.io/TCC/"
         },
         {
             "id": 2,
             "name": "System Rank",
-            "description": "Projeto REST API, com Front e Back"
+            "description": "Projeto REST API, com Front e Back",
+            "link": "https://system-rank-vinicius.onrender.com/"
         },
         {
             "id": 3,
             "name": "Bloco de notas",
-            "description": "Aplicativo mobile, usando Flutter"
+            "description": "Aplicativo mobile, usando Flutter",
+            "link": "https://github.com/MisterDoom4/bloco_de_notas"
         },
         {
             "id": 4,
             "name": "Portifólio",
-            "description": "Site pessoal usando React"
+            "description": "Site pessoal usando React",
+            "link": "https://viniciusbarbosaportfolio.netlify.app/"
         },
         {
             "id": 5,
             "name": "Jogo da Velha",
-            "description": "IA de jogo da velha usando Python"
+            "description": "IA de jogo da velha usando Python",
+            "link": "https://github.com/MisterDoom4/Tic_Tac_Toe_IA"
         }
     ]
 }

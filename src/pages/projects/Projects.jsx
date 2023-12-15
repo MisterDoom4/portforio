@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 
 function Projects(props) {
     const { darkMode } = props;
@@ -36,9 +36,9 @@ function Projects(props) {
             <ol
                 className={`pt-[10%] flex flex-wrap justify-center items-center md:pl-96 md:justify-normal`}>
                 {projects.map((project) => (
-                    <Link
+                    <a
                         key={project.id}
-                        to={`/projeto${project.id}`}
+                        href={project.link}
                         onMouseEnter={() => handleResume(project.id)}
                         onMouseLeave={() => handleResume(project.id)}
                         className={`mr-7 mb-7 bg-red-700 relative flex w-48 h-48 items-center justify-center rounded-xl`}>
@@ -49,7 +49,7 @@ function Projects(props) {
                             }`}>
                             <p className="text-3xl text-center">{project.description}</p>
                         </div>
-                    </Link>
+                    </a>
                 ))}
             </ol>
         </section>
