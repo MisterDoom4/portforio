@@ -6,6 +6,7 @@ import Profile from './pages/profile/Profile';
 // import Main from './components/Main'
 import { useMediaQuery } from 'react-responsive';
 import Projects from './pages/projects/Projects';
+import Resume from './pages/resume/Resume';
 import Teste from './components/Teste';
 import config from './assets/config.json';
 
@@ -28,6 +29,10 @@ function App() {
                 <Route
                     path="/projects"
                     element={<Projects darkMode={darkMode} projects ={config.projects} />}
+                />
+                <Route
+                    path="/resume"
+                    element={<Resume darkMode={darkMode} />}
                 />
                 <Route
                     path="/teste"

@@ -8,7 +8,7 @@ function Profile({ darkMode, tecs }) {
     };
 
     return (
-        <section className={`${darkMode ? ' bg-gray-700' : 'bg-white'}`}>
+        <section className={`min-h-screen ${darkMode ? ' bg-gray-700' : 'bg-white'}`}>
             <section
                 className={` flex-col flex items-center md:items-start md:flex-row ${
                     darkMode ? 'bg-gray-600' : 'bg-gray-200'

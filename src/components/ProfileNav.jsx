@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
     AiOutlineHome,
     AiOutlineRead,
-    AiOutlineMail,
     AiOutlineMenu,
     AiFillProject
 } from 'react-icons/ai';
@@ -114,14 +113,6 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                                 <h2 className="ml-4 inline-block font-bold">Resume</h2>
                             </Link>
                         </li>
-                        <li className="mb-[5px]">
-                            <Link
-                                to="/contact"
-                                className="hover:text-blue-800 text-white">
-                                <AiOutlineMail className="inline-block" size={25} />
-                                <h2 className="ml-4 inline-block font-bold">Contact</h2>
-                            </Link>
-                        </li>
                     </ul>
                     <label
                         className={`flex items-center justify-center mt-[30px] mb-[15px] ${
@@ -204,12 +195,6 @@ function ProfileNav({ isMobile, onDarkModeChange }) {
                         <Link to="/resume" className="hover:text-blue-800 text-white">
                             <AiOutlineRead className="inline-block" size={25} />
                             <h2 className="ml-4 inline-block font-bold">Resume</h2>
-                        </Link>
-                    </li>
-                    <li className="mb-[30px]">
-                        <Link to="/contact" className="hover:text-blue-800 text-white">
-                            <AiOutlineMail className="inline-block" size={25} />
-                            <h2 className="ml-4 inline-block font-bold">Contact</h2>
                         </Link>
                     </li>
                 </ul>
